@@ -31,7 +31,7 @@ public class Ventana5 extends JFrame {
     public Ventana5(String title) throws HeadlessException {
         super(title);
         this.setSize(400, 300);
-        this.setLocation(700, 30);
+        this.setLocation(700, 400);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();
         this.setContentPane(this.jPanel);

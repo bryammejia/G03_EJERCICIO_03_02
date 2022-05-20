@@ -5,6 +5,7 @@ import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -30,8 +31,8 @@ public class Ventana2 extends JFrame {
     
     public Ventana2(String title) throws HeadlessException {
         super(title);
-        this.setSize(550,400);
-        this.setLocation(310,5);
+        this.setSize(400,400);
+        this.setLocation(300,5);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();
         this.setContentPane(this.jPanel1);
@@ -56,15 +57,25 @@ public class Ventana2 extends JFrame {
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
         this.jPanelList.add(new JPanel());
+        
         this.jPanel1.add(this.jPanelList.get(0));
+        this.jPanelList.get(0).setLayout(new BoxLayout(this.jPanelList.get(0), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(1));
+        this.jPanelList.get(1).setLayout(new BoxLayout(this.jPanelList.get(1), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(2));
+        this.jPanelList.get(2).setLayout(new BoxLayout(this.jPanelList.get(2), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(3));
+        this.jPanelList.get(3).setLayout(new BoxLayout(this.jPanelList.get(3), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(4));
+        this.jPanelList.get(4).setLayout(new BoxLayout(this.jPanelList.get(4), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(5));
+        this.jPanelList.get(5).setLayout(new BoxLayout(this.jPanelList.get(5), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(6));
+        this.jPanelList.get(6).setLayout(new BoxLayout(this.jPanelList.get(6), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(7));
+        this.jPanelList.get(7).setLayout(new BoxLayout(this.jPanelList.get(7), BoxLayout.X_AXIS));
         this.jPanel1.add(this.jPanelList.get(8));
+        this.jPanelList.get(8).setLayout(new BoxLayout(this.jPanelList.get(8), BoxLayout.X_AXIS));
     }
     
     public void iniciarEtiquetas(){

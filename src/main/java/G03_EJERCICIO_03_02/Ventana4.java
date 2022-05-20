@@ -32,7 +32,7 @@ public class Ventana4 extends JFrame{
     public Ventana4(String title) throws HeadlessException {
         super(title);
         this.setSize(600, 700);
-        this.setLocation(650, 30);
+        this.setLocation(700, 5);
         this.setBackground(Color.BLUE);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();

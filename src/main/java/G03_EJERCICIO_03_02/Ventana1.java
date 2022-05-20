@@ -29,7 +29,7 @@ public class Ventana1 extends JFrame {
 
     public Ventana1(String title) throws HeadlessException {
         super(title);
-        this.setSize(300, 200);
+        this.setSize(300, 220);
         this.setLocation(5, 5);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();
@@ -38,7 +38,6 @@ public class Ventana1 extends JFrame {
 
     public void iniciarComponentes() {
         this.jPanel = new JPanel();
-        this.jPanel.setBackground(Color.RED);
         this.jPanel.setLayout(new GridLayout(4, 1));
         this.iniciarPaneles();
         this.iniciarEtiquetas();
@@ -93,7 +92,7 @@ public class Ventana1 extends JFrame {
 
     public void iniciarTexto() {
         
-        JTextField texto = new JTextField(20);
+        JTextField texto = new JTextField(10);
         this.jPanelList.get(2).add(texto);
         texto.setEnabled(true);
     }
