@@ -61,8 +61,6 @@ public class Ventana3 extends JFrame {
             this.jPanelList.add(new JPanel());
             this.jPanelList.add(new JPanel());
             
-        
-        
         this.jPanel.add(this.jPanelList.get(0));
         this.jPanelList.get(0).setLayout(new BoxLayout(this.jPanelList.get(0), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(1));
