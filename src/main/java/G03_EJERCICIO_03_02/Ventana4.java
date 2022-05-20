@@ -1,12 +1,14 @@
 
 package G03_EJERCICIO_03_02;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -25,6 +27,7 @@ public class Ventana4 extends JFrame{
     private List<JPanel> jPanelList;
     private List<JLabel> jLabelList;
     private List<JComboBox> jComboBoxList;
+    private List<JButton> jButtonList;
     
     public Ventana4(String title) throws HeadlessException {
         super(title);
@@ -45,6 +48,7 @@ public class Ventana4 extends JFrame{
         this.iniciarTextos();
         this.iniciarCombos();
         this.iniciarRadio();
+        this.iniciarBotones();
         
     }
     
@@ -67,22 +71,36 @@ public class Ventana4 extends JFrame{
         this.jPanelList.add(new JPanel());
         
         this.jPanel.add(this.jPanelList.get(0));
+        this.jPanelList.get(0).setLayout(new BoxLayout(this.jPanelList.get(0), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(1));
+        this.jPanelList.get(1).setLayout(new BoxLayout(this.jPanelList.get(1), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(2));
+        this.jPanelList.get(2).setLayout(new BoxLayout(this.jPanelList.get(2), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(3));
+        this.jPanelList.get(3).setLayout(new BoxLayout(this.jPanelList.get(3), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(4));
+        this.jPanelList.get(4).setLayout(new BoxLayout(this.jPanelList.get(4), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(5));
+        this.jPanelList.get(5).setLayout(new BoxLayout(this.jPanelList.get(5), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(6));
+        this.jPanelList.get(6).setLayout(new BoxLayout(this.jPanelList.get(6), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(7));
+        this.jPanelList.get(7).setLayout(new BoxLayout(this.jPanelList.get(7), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(8));
+        this.jPanelList.get(8).setLayout(new BoxLayout(this.jPanelList.get(8), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(9));
+        this.jPanelList.get(9).setLayout(new BoxLayout(this.jPanelList.get(9), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(10));
+        this.jPanelList.get(10).setLayout(new BoxLayout(this.jPanelList.get(10), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(11));
+        this.jPanelList.get(11).setLayout(new BoxLayout(this.jPanelList.get(11), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(12));
+        this.jPanelList.get(12).setLayout(new BoxLayout(this.jPanelList.get(12), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(13));
+        this.jPanelList.get(13).setLayout(new BoxLayout(this.jPanelList.get(13), BoxLayout.X_AXIS));
          
+   
     }
-    
     public void iniciarEtiquetas(){
         
         this.jLabelList = new ArrayList<>();
@@ -177,6 +195,17 @@ public class Ventana4 extends JFrame{
         radio.add(new JRadioButton("Nuevos"));
         this.jPanelList.get(11).add(radio);            
         radio.setEnabled(true);
+        
+    }
+    
+    public void iniciarBotones() {
+
+        this.jButtonList = new ArrayList<>();
+        this.jButtonList.add(new JButton("Guardar"));
+        this.jButtonList.add(new JButton("Eliminar"));
+        
+        this.jPanelList.get(13).add(this.jButtonList.get(0));
+        this.jPanelList.get(13).add(this.jButtonList.get(1));
         
     }
     

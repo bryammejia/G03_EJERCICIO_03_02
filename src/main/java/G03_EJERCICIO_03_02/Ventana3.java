@@ -8,6 +8,8 @@ import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -27,7 +29,7 @@ public class Ventana3 extends JFrame {
     public Ventana3(String title) throws HeadlessException {
         super(title);
         this.setSize(400, 500);
-        this.setLocation(10, 10);
+        this.setLocation(860,5);
         this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.iniciarComponentes();
@@ -38,32 +40,45 @@ public class Ventana3 extends JFrame {
 
         this.jPanel = new JPanel();
         this.jPanel.setBackground(Color.WHITE);
-        this.jPanel.setLayout(new GridLayout(7, 1));
+        this.jPanel.setLayout(new GridLayout(8, 1));
         this.iniciarPaneles();
         this.iniciarEtiquetas();
         this.iniciarCombos();
+        this.iniciarBoton();
 
     }
 
     public void iniciarPaneles() {
 
         this.jPanelList = new ArrayList<>();
+       
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            this.jPanelList.add(new JPanel());
+            
         
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
-        this.jPanelList.add(new JPanel());
         
         this.jPanel.add(this.jPanelList.get(0));
+        this.jPanelList.get(0).setLayout(new BoxLayout(this.jPanelList.get(0), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(1));
+        this.jPanelList.get(1).setLayout(new BoxLayout(this.jPanelList.get(1), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(2));
+        this.jPanelList.get(2).setLayout(new BoxLayout(this.jPanelList.get(2), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(3));
+        this.jPanelList.get(3).setLayout(new BoxLayout(this.jPanelList.get(3), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(4));
+        this.jPanelList.get(4).setLayout(new BoxLayout(this.jPanelList.get(4), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(5));
+        this.jPanelList.get(5).setLayout(new BoxLayout(this.jPanelList.get(5), BoxLayout.X_AXIS));
         this.jPanel.add(this.jPanelList.get(6));
+        this.jPanelList.get(6).setLayout(new BoxLayout(this.jPanelList.get(6), BoxLayout.X_AXIS));
+        this.jPanel.add(this.jPanelList.get(7));
+        this.jPanelList.get(7).setLayout(new BoxLayout(this.jPanelList.get(7), BoxLayout.X_AXIS));
 
     }
 
@@ -132,6 +147,15 @@ public class Ventana3 extends JFrame {
         this.jComboBoxList.get(4).addItem("NOCTURNA");
         this.jPanelList.get(5).add(this.jComboBoxList.get(4));
 
+    }
+    
+    public void iniciarBoton(){
+        
+        JButton boton1 = new JButton();
+        boton1.setText("Siguiente");
+        this.jPanelList.get(7).add(boton1);
+        boton1.setEnabled(true);
+        
     }
 
 }
