@@ -9,7 +9,10 @@ public class Principal {
     public static void main(String[] args) {
         
         var v3 = new Ventana3("INFORMACION DE LA CARRERA");
+        var v4 = new Ventana4("CREAR GRUPO");
         v3.setVisible(true);
+        v4.setVisible(true);
         
     }
 }
+
