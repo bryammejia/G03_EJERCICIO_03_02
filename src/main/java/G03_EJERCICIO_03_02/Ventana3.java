@@ -80,6 +80,7 @@ public class Ventana3 extends JFrame {
         this.jLabelList.add(new JLabel("Fecha de Registro: "));
         this.jLabelList.add(new JLabel("20/05/2022 "));
 
+
         this.jPanelList.get(0).add(this.jLabelList.get(0));
         this.jPanelList.get(0).add(this.jLabelList.get(1));
         this.jPanelList.get(1).add(this.jLabelList.get(2));
