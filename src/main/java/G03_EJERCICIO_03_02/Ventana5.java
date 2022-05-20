@@ -32,6 +32,7 @@ public class Ventana5 extends JFrame{
         super.setTitle(title);
         this.setLocationRelativeTo(null);
         this.setSize(900,200);
+        this.setLocation(200, 300);
         this.iniciarComponentes();
         this.setContentPane(jPanelPrincipal);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
